@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sravan Chandaka - Portfolio</title>
     <style>
+        /* General Styles */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -14,6 +15,12 @@
             color: #333;
         }
 
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header Section */
         header {
             background-color: #34495e;
             color: white;
@@ -30,6 +37,7 @@
             margin-top: 10px;
         }
 
+        /* Navigation Bar */
         nav {
             display: flex;
             justify-content: center;
@@ -39,7 +47,6 @@
         nav a {
             color: white;
             padding: 15px 20px;
-            text-decoration: none;
             text-transform: uppercase;
             font-weight: bold;
             transition: background-color 0.3s;
@@ -49,6 +56,7 @@
             background-color: #1abc9c;
         }
 
+        /* Hero Section */
         .hero {
             background-color: #2980b9;
             color: white;
@@ -73,6 +81,7 @@
             line-height: 1.5;
         }
 
+        /* Section Styles */
         .section {
             padding: 50px 20px;
             text-align: center;
@@ -80,7 +89,7 @@
         }
 
         .section h2 {
-            font-size: 2em;
+            font-size: 2.5em;
             margin-bottom: 20px;
             color: #2c3e50;
         }
@@ -94,9 +103,11 @@
             text-align: left;
         }
 
+        /* Projects Section */
         .projects-section {
             background-color: #3498db;
             color: white;
+            padding: 50px 20px;
         }
 
         .project-grid {
@@ -132,6 +143,35 @@
             font-size: 1.5em;
         }
 
+        /* Contact Section */
+        .contact-section {
+            padding: 50px 20px;
+            background-color: #34495e;
+            color: white;
+        }
+
+        .contact-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-grid div {
+            background-color: #2c3e50;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        /* Footer Section */
         footer {
             background-color: #2c3e50;
             color: white;
@@ -240,4 +280,26 @@
             <div class="project-card">
                 <h3>CV_PROJECTS</h3>
                 <p>Collection of various computer vision projects.</p>
-                <a href="https://github.com/ChandakaSravan/CV_PROJECTS" style="color: white;">View Project
+                <a href="https://github.com/ChandakaSravan/CV_PROJECTS" style="color: white;">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-grid">
+            <div>Email: <a href="mailto:chandakasravan@gmail.com">chandakasravan@gmail.com</a></div>
+            <div>Phone: (469) 773-1868</div>
+            <div>Location: Dallas, TX</div>
+            <div>LinkedIn: <a href="https://linkedin.com/in/sravan-chandaka">linkedin.com/in/sravan-chandaka</a></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sravan Chandaka. All rights reserved. | <a href="mailto:chandakasravan@gmail.com">Contact Me</a></p>
+    </footer>
+
+</body>
+
+</html>
